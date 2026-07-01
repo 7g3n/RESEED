@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #202532;
+  background: #f7f8fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(247, 248, 251, 0.94), rgba(238, 242, 249, 0.94)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(70, 87, 120, 0.04) 0,
+      rgba(70, 87, 120, 0.04) 1px,
+      transparent 1px,
+      transparent 96px
+    );
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
+canvas {
+  display: block;
+}
+
+::selection {
+  color: #202532;
+  background: #dff5ed;
+}
+
+.panel {
+  border: 1px solid rgba(123, 134, 156, 0.26);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 50px rgba(32, 37, 50, 0.08);
+}
+
+.control-focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.control-focus:focus-visible {
+  border-color: rgba(63, 185, 133, 0.72);
+  box-shadow: 0 0 0 4px rgba(63, 185, 133, 0.16);
+}
+
+.range-thin {
+  accent-color: #3fb985;
+}
